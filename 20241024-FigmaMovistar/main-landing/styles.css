@@ -1,0 +1,94 @@
+body {
+  overflow-x: hidden;
+}
+.header-bg {
+  background-color: #009ef7;
+}
+.background-img {
+  background-image: url('/src/heroImage.png'); /* Asegúrate de que la ruta sea correcta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; /* Esto es necesario para el pseudo-elemento */
+}
+.background-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85); /* Color blanco con opacidad del 85% */
+  z-index: 1; /* Asegura que el filtro esté sobre la imagen pero debajo del contenido */
+}
+
+/* Asegúrate de que el contenido esté por encima del filtro */
+.background-img > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+.text-white {
+  color: #ffffff;
+}
+.hero-text {
+  color: #009ef7;
+}
+.number-circle {
+  background-color: #009ef7;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.border-rounded {
+  border-radius: 12px;
+}
+.bg-light-blue {
+  background-color: #009ef7;
+}
+.bg-lemon-green {
+  background-color: #62ad15;
+}
+.full-width-container {
+  width: 100%;
+  background-color: #009ef7;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.circle-background {
+  position: relative;
+  overflow: hidden; /* Esto recorta el contenido del div */
+  width: 500px; /* Tamaño del contenedor */
+  height: 500px; /* Tamaño del contenedor */
+}
+
+.circle-background::before {
+  content: "";
+  position: absolute;
+  top: 30%; /* Ajusta según tu desplazamiento deseado */
+  left: -100px; /* Desplazamiento hacia la izquierda */
+  width: 600px; /* Tamaño más grande del círculo */
+  height: 600px; /* Tamaño más grande del círculo */
+  background-color: #BDE4A4;
+  border-radius: 50%;
+}
+
+.circle-background img {
+  position: relative;
+  z-index: 1;
+  width: 400px; /* Aumenta el tamaño de la imagen */
+  height: 400px; /* Aumenta el tamaño de la imagen */
+  object-fit: cover; /* Asegura que la imagen no se deforme */
+  top: 20%; /* Ajuste de la posición vertical de la imagen */
+}
+

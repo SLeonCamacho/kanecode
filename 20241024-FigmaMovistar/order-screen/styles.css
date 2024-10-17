@@ -1,0 +1,45 @@
+.header-bg {
+  background-color: #009ef7;
+}
+.text-white {
+  color: #ffffff;
+}
+.hero-text {
+  color: #009ef7;
+}
+.number-circle {
+  background-color: #009ef7;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.border-rounded {
+  border-radius: 12px;
+}
+.bg-light-blue {
+  background-color: #009ef7;
+}
+.border-light-blue {
+  border-color: #009ef7;
+}
+.bg-lemon-green {
+  background-color: #62ad15;
+}
+.full-width-container {
+  width: 100%;
+  background-color: #009ef7;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+body {
+  overflow-x: hidden;
+}
