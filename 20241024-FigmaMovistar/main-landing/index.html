@@ -1,383 +1,398 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recarga Sin Tarjeta</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light-blue">
-      <div class="container">
-        <!-- Navbar brand/logo -->
-        <a class="navbar-brand" href="#">
-          <!-- Aquí puedes insertar tu logo o texto -->
-          <img
-            src="https://via.placeholder.com/50"
-            alt="Logo"
-            class="d-inline-block align-text-top d-none"
-          />
-        </a>
 
-        <!-- Button for mobile view -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recarga Sin Tarjeta</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
 
-        <!-- Navbar links -->
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="#"
-                >¿Cómo recargar sin tarjeta?</a
-              >
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light-blue">
+    <div class="container">
+      <!-- Navbar brand/logo -->
+      <a class="navbar-brand" href="#">
+        <!-- Aquí puedes insertar tu logo o texto -->
+        <img src="https://via.placeholder.com/50" alt="Logo" class="d-inline-block align-text-top d-none" />
+      </a>
+
+      <!-- Button for mobile view -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white fw-bold" href="#">¿Cómo recargar sin tarjeta?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-bold" href="#">¿Quiénes somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-bold" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-bold" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="background-img py-5">
+    <!-- Hero Section -->
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="hero-text fw-bolder">Haz que te recarguen</h1>
+        <h2 class="hero-text fw-bold">Nadie te da más</h2>
+        <h3 class="hero-text fw-bold">Sin comisiones ni fees ocultos</h3>
+        <h4 class="hero-text fw-semibold">¡Sin necesidad de tarjeta! Paga
+          en mas de 500 establecimientos en USA</h4>
+      </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Columna de los pasos (9 columnas) -->
+        <div class="col-md-9">
+          <!-- Paso 1 -->
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <div class="d-flex align-items-center">
+                <div class="number-circle">1</div>
+                <div class="ms-3">
+                  <h4 class="fw-bold">Ingresa el número a recargar</h4>
+                  <p class="fw-normal">
+                    Introduce el número del celular prepago al que vas a
+                    enviar la recarga.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 align-content-center">
+              <div class="d-flex">
+                <div class="border p-2 rounded d-flex align-items-center me-2 bg-white" style="width: 100px">
+                  <span class="me-2">🇲🇽 +52</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Introduce el número" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Paso 2 -->
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <div class="d-flex align-items-center">
+                <div class="number-circle">2</div>
+                <div class="ms-3">
+                  <h4 class="fw-bold">Elige el importe de la recarga</h4>
+                  <p class="fw-normal">
+                    Selecciona el importe o el plan de preferencia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 align-content-center">
+              <div class="d-flex">
+                <input type="text" class="form-control" placeholder="200 MXN ($11) ¡Recomendado!" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Paso 3 -->
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <div class="d-flex align-items-center">
+                <div class="number-circle">3</div>
+                <div class="ms-3">
+                  <h4 class="fw-bold">
+                    Ingresa los datos de tu familiar en USA
+                  </h4>
+                  <p class="fw-normal">
+                    Introduce el teléfono o correo electrónico de tu familiar
+                    para que enviemos la confirmación.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 align-content-center">
+              <div class="d-flex">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">🇺🇸 +1</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Introduce el número o correo electrónico" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna del mensaje de ahorro (3 columnas) -->
+        <div class="col-md-3 d-flex align-items-center">
+          <div class="alert alert-success text-center w-100 py-4 bg-lemon-green">
+            <img src="../src/movistar.png" alt="movistar" />
+            <p class="mb-0 text-light font-weight-bold">
+              Estás ahorrando $9, en otros recargadores tendrías solo 110 MXN.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Botón Enviar -->
+      <div class="row text-center mb-4">
+        <div class="col-12">
+          <button class="btn bg-light-blue px-5 py-2 text-light">
+            Enviar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid pt-3 pb-3 bg-light-blue">
+    <div class="row">
+      <div class="col text-center">
+        <h3 class="fw-bold text-white py-3">
+          ¡Recibe un 60% más que a través de otros recargadores!
+        </h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <!-- Sección de comparativa -->
+    <div class="row justify-content-center mt-4 align-items-stretch">
+
+      <!-- Columna de Mandan y Recibes (reduced size for small screens) -->
+      <div class="col-4 col-md-2 d-flex text-wrap"> <!-- Reduced from col-6 to col-4 on small screens -->
+        <div class="card text-center border-0 bg-transparent h-100 w-100 d-flex flex-column">
+          <!-- Top container: 40% of the height (empty for spacing) -->
+          <div class="top-container flex-grow-0" style="flex-basis: 40%;"></div>
+
+          <!-- Bottom container: 60% of the height -->
+          <div class="bottom-container flex-grow-1 d-flex align-items-end">
+            <div class="container">
+              <div class="row d-flex align-items-end">
+                <!-- First column for Mandan and Recibes text -->
+                <div class="card-body col-12 text-start mt-5">
+                  <p class="fw-bold mb-0 text-light-blue d-flex justify-content-end">
+                    Mandan <span class="ms-2"><i class="fas fa-arrow-right"></i></span>
+                  </p>
+                  <p class="fw-bold mb-0 text-light-blue d-flex justify-content-end">
+                    Recibes&nbsp <span class="ms-2"><i class="fas fa-arrow-right"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna de Movistar -->
+      <div class="col-md-3 col-6 d-flex text-wrap">
+        <div class="card text-center border-0 bg-light-blue h-100 w-100 d-flex flex-column">
+          <!-- Top container: 40% of the height -->
+          <div class="top-container flex-grow-0" style="flex-basis: 40%;">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-white">Movistar</h5>
+              <img src="../src/movistarCard.png" alt="movistar-card" class="img-fluid" />
+            </div>
+          </div>
+
+          <!-- Bottom container: 60% of the height -->
+          <div class="bottom-container flex-grow-1 d-flex align-items-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 text-white">
+                  <p class="mb-0 text-start w-100">USD</p>
+                  <p class="text-start w-100">MXN</p>
+                </div>
+                <div class="col-6 text-white">
+                  <p class="mb-0 fw-bold text-start w-100">$10</p>
+                  <p class="fw-bold text-start w-100">$190</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Row below 768px with mt-4 margin -->
+      <div class="w-100 d-block d-md-none mt-4"></div> <!-- Forces a new row for small screens with margin -->
+
+      <!-- Duplicated Columna de Mandan y Recibes (only visible on small screens, reduced size) -->
+      <div class="col-4 d-flex text-wrap d-md-none"> <!-- Reduced from col-6 to col-4 -->
+        <div class="card text-center border-0 bg-transparent h-100 w-100 d-flex flex-column">
+          <!-- Top container: 40% of the height (empty for spacing) -->
+          <div class="top-container flex-grow-0" style="flex-basis: 40%;"></div>
+
+          <!-- Bottom container: 60% of the height -->
+          <div class="bottom-container flex-grow-1 d-flex align-items-end">
+            <div class="container">
+              <div class="row d-flex align-items-end">
+                <!-- First column for Mandan and Recibes text -->
+                <div class="card-body col-12 text-start mt-5">
+                  <p class="fw-bold mb-0 text-light-blue d-flex justify-content-end">
+                    Mandan <span class="ms-2"><i class="fas fa-arrow-right"></i></span>
+                  </p>
+                  <p class="fw-bold mb-0 text-light-blue d-flex justify-content-end">
+                    Recibes <span class="ms-2"><i class="fas fa-arrow-right"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna de Otros Recargadores -->
+      <div class="col-md-3 col-6 d-flex text-wrap">
+        <div class="card text-center bg-light-gray border-light-blue h-100 w-100 d-flex flex-column">
+          <!-- Top container: 40% of the height -->
+          <div class="top-container flex-grow-0" style="flex-basis: 40%;">
+            <div class="card-body text-dark">
+              <h5 class="card-title fw-bold">Otros</h5>
+              <h5 class="card-title fw-bold">recargadores</h5>
+            </div>
+          </div>
+
+          <!-- Bottom container: 60% of the height -->
+          <div class="bottom-container flex-grow-1 d-flex align-items-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <p class="mb-0 text-start w-100">USD</p>
+                  <p class="text-start w-100">MXN</p>
+                </div>
+                <div class="col-6">
+                  <p class="mb-0 fw-bold text-start w-100">$10</p>
+                  <p class="fw-bold text-start w-100">$100</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pregunta final -->
+  <div class="row mt-5 mb-5">
+    <div class="col text-center">
+      <a href="#" class="hero-text fw-bold text-decoration-none">¿Quiénes somos?</a>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-light-blue">
+    <div class="row align-items-center">
+      <!-- Columna de la imagen -->
+      <div class="col-md-6 p-0">
+        <div class="circle-background">
+          <img src="../src/personMovistar.png" alt="Persona sonriendo con móvil" class="img-fluid" />
+        </div>
+      </div>
+
+      <!-- Columna de texto -->
+      <div class="col-md-6 text-white">
+        <h2 class="fw-bold">Mitopup Canal Oficial Movistar</h2>
+        <p class="lead">
+          Somos el canal oficial de Movistar dedicado a ofrecerte la mejor
+          experiencia en recargas. Con nuestro servicio, garantizamos
+          transacciones rápidas, seguras y sin comisiones ocultas. Trabajamos
+          para que recibas más por cada recarga, con total transparencia y
+          simplicidad.
+          <br />
+          ¡Recarga fácil y sin sorpresas!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ Section -->
+  <div class="container my-5">
+    <h2 class="hero-text fw-bold">Preguntas frecuentes</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            ¿Cuáles son los métodos de pago disponibles?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Puedes pagar con tarjeta de débito o crédito, PayPal, y
+            transferencias bancarias.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo">
+            ¿Por qué recargar con Mitopup?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Mitopup ofrece más beneficios y no tiene comisiones ocultas.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-light-blue text-white py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Columna de logo -->
+        <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+          <img src="../src/LogoMitopupInverse.png" alt="Logo Movistar" class="img-fluid" />
+          <p class="mt-2">Powered by <strong>Mitopup</strong></p>
+        </div>
+
+        <!-- Columna de enlaces legales -->
+        <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+          <h5>Legal</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none">Política de privacidad</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="#"
-                >¿Quiénes somos?</a
-              >
+            <li>
+              <a href="#" class="text-white text-decoration-none">Aviso legal</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="#">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="#">Contacto</a>
+            <li>
+              <a href="#" class="text-white text-decoration-none">Término y condiciones</a>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
 
-    <div class="background-img py-5">
-      <!-- Hero Section -->
-      <div class="container">
-        <div class="row text-center">
-          <h1 class="hero-text fw-bold">Haz que te recarguen</h1>
-          <h2 class="hero-text fw-bold">Nadie te da más</h2>
-          <h3 class="hero-text fw-bold">Sin comisiones ni fees ocultos</h3>
-        </div>
-      </div>
-
-      <!-- Form Section -->
-      <div class="container">
-        <div class="row">
-          <!-- Columna de los pasos (9 columnas) -->
-          <div class="col-md-9">
-            <!-- Paso 1 -->
-            <div class="row mb-4">
-              <div class="col-md-6">
-                <div class="d-flex align-items-center">
-                  <div class="number-circle">1</div>
-                  <div class="ms-3">
-                    <h4 class="fw-bold">Ingresa el número a recargar</h4>
-                    <p>
-                      Introduce el número del celular prepago al que vas a
-                      enviar la recarga.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 align-content-center">
-                <div class="d-flex">
-                  <div
-                    class="border p-2 rounded d-flex align-items-center me-2"
-                    style="width: 100px"
-                  >
-                    <span class="me-2">🇲🇽 +52</span>
-                  </div>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Introduce el número"
-                  />
-                </div>
-              </div>
+        <!-- Columna de suscripción -->
+        <div class="col-md-4">
+          <h5>
+            Suscríbete para recibir ofertas exclusivas de Movistar
+            directamente en tu correo.
+          </h5>
+          <form class="mt-3">
+            <div class="input-group">
+              <input type="email" class="form-control border-rounded" placeholder="Correo electrónico"
+                aria-label="Correo electrónico" />
             </div>
-
-            <!-- Paso 2 -->
-            <div class="row mb-4">
-              <div class="col-md-6">
-                <div class="d-flex align-items-center">
-                  <div class="number-circle">2</div>
-                  <div class="ms-3">
-                    <h4 class="fw-bold">Elige el importe de la recarga</h4>
-                    <p>Selecciona el importe o el plan de preferencia.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 align-content-center">
-                <div class="d-flex">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="200 MXN ($11) ¡Recomendado!"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <!-- Paso 3 -->
-            <div class="row mb-4">
-              <div class="col-md-6">
-                <div class="d-flex align-items-center">
-                  <div class="number-circle">3</div>
-                  <div class="ms-3">
-                    <h4 class="fw-bold">
-                      Ingresa los datos de tu familiar en USA
-                    </h4>
-                    <p>
-                      Introduce el teléfono o correo electrónico de tu familiar
-                      para que enviemos la confirmación.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 align-content-center">
-                <div class="d-flex">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Introduce el número o correo electrónico"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Columna del mensaje de ahorro (3 columnas) -->
-          <div class="col-md-3 d-flex align-items-center">
-            <div
-              class="alert alert-success text-center w-100 py-4 bg-lemon-green"
-            >
-              <img src="/src/movistar.png" alt="movistar" />
-              <p class="mb-0 text-light font-weight-bold">
-                Estás ahorrando $9, en otros recargadores tendrías solo 110 MXN.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Botón Enviar -->
-        <div class="row text-center mb-4">
-          <div class="col-12">
-            <button class="btn bg-light-blue px-4 py-2 text-light">
-              Enviar
-            </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
+  </footer>
 
-    <div class="container-fluid pt-3 pb-3 bg-light-blue">
-      <div class="row">
-        <div class="col text-center">
-          <h3 class="fw-bold text-white py-3">
-            ¡Recibe un 60% más que a través de otros recargadores!
-          </h3>
-        </div>
-      </div>
-    </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
-    <div class="container mt-5">
-      <!-- Sección de comparativa -->
-      <div class="row justify-content-center mt-4">
-        <!-- Columna izquierda con los textos "Mandan" y "Recibes" -->
-        <div
-          class="col-md-2 col-6 d-flex flex-column justify-content-end mb-3 align-items-sm-end align-items-start"
-        >
-          <p class="fw-bold mb-0">
-            Mandan <span class="ms-2"><i class="fas fa-arrow-right"></i></span>
-          </p>
-          <p class="fw-bold">
-            Recibes <span class="ms-2"><i class="fas fa-arrow-right"></i></span>
-          </p>
-        </div>
-
-        <!-- Columna de Movistar -->
-        <div class="col-md-3 col-6">
-          <div class="card text-center border-0 bg-light-blue">
-            <div class="card-body text-white">
-              <h5 class="card-title fw-bold">Movistar</h5>
-              <img src="/src/movistarCard.png" alt="movistar-card" />
-              <div class="mt-4">
-                <p class="mb-0">USD <span class="fw-bold">$10</span></p>
-                <p>MXN <span class="fw-bold">$190</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Columna de Otros Recargadores -->
-        <div class="col-md-3 col-6 mt-3 mt-md-0">
-          <div class="card text-center border-0 bg-light-gray">
-            <div class="card-body text-dark">
-              <h5 class="card-title fw-bold">Otros recargadores</h5>
-              <div class="mt-4">
-                <p class="mb-0">USD <span class="fw-bold">$10</span></p>
-                <p>MXN <span class="fw-bold">$100</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pregunta final -->
-    <div class="row mt-5 mb-5">
-      <div class="col text-center">
-        <a href="#" class="hero-text fw-bold text-decoration-none"
-          >¿Quiénes somos?</a
-        >
-      </div>
-    </div>
-
-    <div class="container-fluid bg-light-blue">
-      <div class="row align-items-center">
-        <!-- Columna de la imagen -->
-        <div class="col-md-6 p-0">
-          <div class="circle-background">
-            <img
-              src="/src/personMovistar.png"
-              alt="Persona sonriendo con móvil"
-              class="img-fluid"
-            />
-          </div>
-        </div>
-
-        <!-- Columna de texto -->
-        <div class="col-md-6 text-white">
-          <h2 class="fw-bold">Mitopup Canal Oficial Movistar</h2>
-          <p class="lead">
-            Somos el canal oficial de Movistar dedicado a ofrecerte la mejor
-            experiencia en recargas. Con nuestro servicio, garantizamos
-            transacciones rápidas, seguras y sin comisiones ocultas. Trabajamos
-            para que recibas más por cada recarga, con total transparencia y
-            simplicidad.
-            <br />
-            ¡Recarga fácil y sin sorpresas!
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- FAQ Section -->
-    <div class="container my-5">
-      <h2 class="hero-text fw-bold">Preguntas frecuentes</h2>
-      <div class="accordion" id="faqAccordion">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-            >
-              ¿Cuáles son los métodos de pago disponibles?
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              Puedes pagar con tarjeta de débito o crédito, PayPal, y
-              transferencias bancarias.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-            >
-              ¿Por qué recargar con Mitopup?
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              Mitopup ofrece más beneficios y no tiene comisiones ocultas.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer Section -->
-    <footer class="bg-light-blue text-white py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- Columna de logo -->
-          <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
-            <img
-              src="/src/LogoMitopupInverse.png"
-              alt="Logo Movistar"
-              class="img-fluid"
-            />
-            <p class="mt-2">Powered by <strong>Mitopup</strong></p>
-          </div>
-
-          <!-- Columna de enlaces legales -->
-          <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
-            <h5>Legal</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="#" class="text-white text-decoration-none"
-                  >Política de privacidad</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none"
-                  >Aviso legal</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-white text-decoration-none"
-                  >Término y condiciones</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Columna de suscripción -->
-          <div class="col-md-4">
-            <h5>
-              Suscríbete para recibir ofertas exclusivas de Movistar
-              directamente en tu correo.
-            </h5>
-            <form class="mt-3">
-              <div class="input-group">
-                <input
-                  type="email"
-                  class="form-control border-rounded"
-                  placeholder="Correo electrónico"
-                  aria-label="Correo electrónico"
-                />
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
 </html>
