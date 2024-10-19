@@ -47,16 +47,35 @@
   </nav>
 
   <div class="background-img py-5">
-    <!-- Hero Section -->
-    <div class="container">
-      <div class="row text-center">
-        <h1 class="hero-text fw-bolder">Haz que te recarguen</h1>
-        <h2 class="hero-text fw-bold">Nadie te da más</h2>
-        <h3 class="hero-text fw-bold">Sin comisiones ni fees ocultos</h3>
-        <h4 class="hero-text fw-semibold">¡Sin necesidad de tarjeta! Paga
-          en mas de 500 establecimientos en USA</h4>
+
+    <div class="position-relative py-5">
+      <!-- Floating Logo for Larger Screens (Tablet and Up) -->
+      <div class="col-auto d-none d-lg-block"> <!-- Visible only on large screens and up (above tablet) -->
+        <img src="../src/LogoMitopup.png" alt="Logo"
+          class="img-fluid position-absolute top-0 start-0 w-20 w-md-20 w-lg-10 p-3 p-md-2 p-lg-1">
+      </div>
+
+      <!-- Logo for Tablet and Smaller Screens (Inline Above the Text) -->
+      <div class="container d-lg-none mb-3"> <!-- Hidden on large screens and above, visible on tablets and smaller -->
+        <div class="row justify-content-start">
+          <div class="col-auto">
+            <img src="../src/LogoMitopup.png" alt="Logo" class="img-fluid w-50 w-md-20">
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="hero-text fw-bolder">Haz que te recarguen</h1>
+          <h2 class="hero-text fw-bold">Nadie te da más</h2>
+          <h3 class="hero-text fw-bold">Sin comisiones ni fees ocultos</h3>
+          <h4 class="hero-text fw-semibold">¡Sin necesidad de tarjeta! Paga
+            en más de 500 establecimientos en USA</h4>
+        </div>
       </div>
     </div>
+
 
     <!-- Form Section -->
     <div class="container mt-5">
@@ -317,25 +336,29 @@
   </div>
 
   <!-- FAQ Section -->
-  <div class="container my-5">
+  <div class="container my-5 d-flex flex-column justify-content-center px-5">
     <h2 class="hero-text fw-bold">Preguntas frecuentes</h2>
     <div class="accordion" id="faqAccordion">
-      <div class="accordion-item">
+
+      <!-- First accordion item -->
+      <div class="accordion-item border-0">
         <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          <button class="accordion-button collapsed accordion-button-light-blue" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne">
             ¿Cuáles son los métodos de pago disponibles?
           </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse">
           <div class="accordion-body">
-            Puedes pagar con tarjeta de débito o crédito, PayPal, y
-            transferencias bancarias.
+            Puedes pagar con tarjeta de débito o crédito, PayPal, y transferencias bancarias.
           </div>
         </div>
       </div>
-      <div class="accordion-item">
+
+      <!-- Second accordion item -->
+      <div class="accordion-item border-0">
         <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          <button class="accordion-button collapsed accordion-button-light-blue" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseTwo">
             ¿Por qué recargar con Mitopup?
           </button>
@@ -346,6 +369,22 @@
           </div>
         </div>
       </div>
+
+      <!-- Third accordion item -->
+      <div class="accordion-item border-0">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed accordion-button-light-blue" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree">
+            ¿Puedo hacer recargas a cualquier país?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Lorem Ipsum
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 

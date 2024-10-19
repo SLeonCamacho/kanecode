@@ -126,3 +126,7 @@ body {
   top: 20%;
   /* Ajuste de la posición vertical de la imagen */
 }
+
+.accordion-button-light-blue::after {
+  color: #009ef7 !important;
+}
