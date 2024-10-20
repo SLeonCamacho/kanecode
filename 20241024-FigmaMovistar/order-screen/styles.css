@@ -1,12 +1,60 @@
+body {
+  overflow-x: hidden;
+}
+
 .header-bg {
   background-color: #009ef7;
 }
+
+.background-img {
+  background-image: url('../src/heroImage.png');
+  /* Asegúrate de que la ruta sea correcta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  /* Esto es necesario para el pseudo-elemento */
+}
+
+.background-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  /* Color blanco con opacidad del 85% */
+  z-index: 1;
+  /* Asegura que el filtro esté sobre la imagen pero debajo del contenido */
+}
+
+/* Asegúrate de que el contenido esté por encima del filtro */
+.background-img>* {
+  position: relative;
+  z-index: 2;
+}
+
 .text-white {
   color: #ffffff;
 }
+
+.text-light-blue {
+  color: #009ef7;
+}
+
 .hero-text {
   color: #009ef7;
 }
+
+.text-on-top {
+  z-index: 1;
+}
+
+.shadow-light-blue {
+  box-shadow: 0px 2px 20px rgba(0, 158, 247, 0.4) !important;
+}
+
 .number-circle {
   background-color: #009ef7;
   color: white;
@@ -25,21 +73,184 @@
 .border-rounded {
   border-radius: 12px;
 }
-.bg-light-blue {
-  background-color: #009ef7;
-}
+
 .border-light-blue {
   border-color: #009ef7;
 }
+
+.bg-light-blue {
+  background-color: #009ef7;
+}
+
+.bg-light-blue:hover {
+  background-color: #50b7f3;
+}
+
 .bg-lemon-green {
   background-color: #62ad15;
 }
+
 .full-width-container {
   width: 100%;
   background-color: #009ef7;
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
-body {
-  overflow-x: hidden;
+
+.circle-background {
+  position: relative;
+  overflow: hidden;
+  /* Esto recorta el contenido del div */
+  width: 500px;
+  /* Tamaño del contenedor */
+  height: 500px;
+  /* Tamaño del contenedor */
+}
+
+.circle-background::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  /* Ajusta según tu desplazamiento deseado */
+  left: -100px;
+  /* Desplazamiento hacia la izquierda */
+  width: 600px;
+  /* Tamaño más grande del círculo */
+  height: 600px;
+  /* Tamaño más grande del círculo */
+  background-color: #BDE4A4;
+  border-radius: 50%;
+}
+
+.circle-background img {
+  position: relative;
+  z-index: 1;
+  width: 400px;
+  /* Aumenta el tamaño de la imagen */
+  height: 400px;
+  /* Aumenta el tamaño de la imagen */
+  object-fit: cover;
+  /* Asegura que la imagen no se deforme */
+  top: 20%;
+  /* Ajuste de la posición vertical de la imagen */
+}
+
+/* Styles for the new circle and image element on smaller screens */
+.circle-background-sm {
+  position: absolute;
+  overflow: hidden;
+  bottom: 0px;
+  right: 0;
+  width: 250px;  /* Adjust size for smaller screens */
+  height: 290px;
+  z-index: 0;  /* Ensure it's behind the text */
+  border: #62ad15;
+}
+
+.circle-background-sm::before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  width: 250px;  /* Ensure it's the same size as the container */
+  height: 250px;
+  background-color: #BDE4A4;
+  border-radius: 50%;
+  z-index: -1;  /* Keep it behind the image */
+}
+
+.circle-background-sm img {
+  width: 200px;
+  height: 200px;
+  top: 100px;
+  left: 100px;
+  object-fit: cover;
+  transform: scaleX(-1);  /* Mirror the image */
+  position: relative;
+}
+
+.accordion-button-light-blue::after {
+  color: #009ef7 !important;
+}
+
+.bottom-logo {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  z-index: 1; /* Ensure it's above other elements */
+}
+
+.bottom-logo img {
+  top: 100px;
+  left: 20px;
+  object-fit: cover;
+  position: relative;
+}
+
+/* Default sizes for larger screens */
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+/* Media queries for smaller screens (≤ lg) */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
 }
