@@ -1,6 +1,10 @@
 /* body {
     overflow-x: hidden;
   } */
+
+  /* * {
+    border: 1px solid red;
+  } */
   
   .header-bg {
     background-color: #009ef7;
