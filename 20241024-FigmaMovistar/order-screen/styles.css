@@ -47,6 +47,10 @@ body {
   color: #009ef7;
 }
 
+.card-text {
+  color: #62ad15;
+}
+
 .text-on-top {
   z-index: 1;
 }
